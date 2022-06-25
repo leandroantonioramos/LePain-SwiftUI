@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct PageView: View, Identifiable {
+    @State private var hasCompleteOnboarding = false
+
     var id = UUID()
     var imageName: String? = nil
     var title: String? = nil
@@ -41,10 +43,11 @@ struct PageView: View, Identifiable {
                             .font(.system(size: 16))
                     }
                     VStack (alignment: .center) {
-                        NavigationLink(pageViewString(text: buttonTitle)) {
-                            //TODO: Navigation
-                            Text("outra view")
-                        }
+                        NavigationLink(destination: PerfilView()) {
+                            Text(pageViewString(text: buttonTitle))
+                        }.simultaneousGesture(TapGesture().onEnded{
+                            updateOnboardingInfo(isCompleted: hasButton)
+                        })
                         .frame(minWidth: 0,
                                maxWidth: .infinity)
                         .font(.system(size: 18))
@@ -55,7 +58,6 @@ struct PageView: View, Identifiable {
                                 .stroke(Color.white,
                                         lineWidth: 2))
                         .isHidden(showButton(hasButton: hasButton))
-
                     }
                 }
             }
@@ -68,7 +70,6 @@ struct PageView: View, Identifiable {
         guard let text = text else {
             return ""
         }
-        print(text)
         return text
     }
     
@@ -79,5 +80,14 @@ struct PageView: View, Identifiable {
         }
         
         return hasButton
+    }
+
+    func updateOnboardingInfo(isCompleted: Bool?)
+    {
+        guard let isCompleted = isCompleted else {
+            return
+        }
+
+        hasCompleteOnboarding.toggle()
     }
 }

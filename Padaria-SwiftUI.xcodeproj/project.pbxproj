@@ -15,6 +15,7 @@
 		A43B14B42864B72600F4288D /* Padaria_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14B32864B72600F4288D /* Padaria_SwiftUIUITests.swift */; };
 		A43B14B62864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */; };
 		A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B1762865F6B1008E11BA /* Modifiers.swift */; };
+		A4B35D272866395C00FAB0E7 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B35D262866395C00FAB0E7 /* PerfilView.swift */; };
 		A4E9C1932864F63700E131D9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9C1922864F63700E131D9 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		A43B14B32864B72600F4288D /* Padaria_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A464B1762865F6B1008E11BA /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		A4B35D262866395C00FAB0E7 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		A4E9C1922864F63700E131D9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */,
 				A43B149A2864B72100F4288D /* ContentView.swift */,
 				A4E9C1922864F63700E131D9 /* PageView.swift */,
+				A4B35D262866395C00FAB0E7 /* PerfilView.swift */,
 				A43B149C2864B72500F4288D /* Assets.xcassets */,
 				A43B149E2864B72500F4288D /* Preview Content */,
 			);
@@ -273,6 +276,7 @@
 			files = (
 				A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */,
 				A43B149B2864B72100F4288D /* ContentView.swift in Sources */,
+				A4B35D272866395C00FAB0E7 /* PerfilView.swift in Sources */,
 				A4E9C1932864F63700E131D9 /* PageView.swift in Sources */,
 				A43B14992864B72100F4288D /* Padaria_SwiftUIApp.swift in Sources */,
 			);
