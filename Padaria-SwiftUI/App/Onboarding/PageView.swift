@@ -45,7 +45,8 @@ struct PageView: View, Identifiable {
                     VStack (alignment: .center) {
                         NavigationLink(destination: PerfilView()) {
                             Text(pageViewString(text: buttonTitle))
-                        }.simultaneousGesture(TapGesture().onEnded{
+                        }
+                        .simultaneousGesture(TapGesture().onEnded {
                             onboardingCompleteStatus.toggle()
                             updateOnboardingInfo()
                         })
