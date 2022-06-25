@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct PerfilView: View {
-
+    
     var body: some View {
-        NavigationView {
-                VStack {
-                    Text("outra view")
-                }
-                .background(Color("background"))
-//            }
+        ZStack (alignment: .top) {
+            Color("background").edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("chega")
+            }
+            Spacer()
         }
-        .navigationBarTitle("Update")
-        .navigationBarHidden(false)
+        .navigationBarBackButtonHidden(true)
+        .navigationTitle("Perfil")
     }
 }
 
