@@ -16,6 +16,7 @@
 		A43B14B62864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */; };
 		A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B1762865F6B1008E11BA /* Modifiers.swift */; };
 		A4B35D272866395C00FAB0E7 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B35D262866395C00FAB0E7 /* PerfilView.swift */; };
+		A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9D21A2867775E00DC46DA /* UserPreferences.swift */; };
 		A4E9C1932864F63700E131D9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9C1922864F63700E131D9 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A464B1762865F6B1008E11BA /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		A4B35D262866395C00FAB0E7 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		A4C9D21A2867775E00DC46DA /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		A4E9C1922864F63700E131D9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,10 +102,8 @@
 		A43B14972864B72100F4288D /* Padaria-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A4C9D21E2867779600DC46DA /* App */,
 				A464B1752865F68C008E11BA /* Helpers */,
-				A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */,
-				A43B149A2864B72100F4288D /* ContentView.swift */,
-				A4E9C1922864F63700E131D9 /* PageView.swift */,
 				A4B35D262866395C00FAB0E7 /* PerfilView.swift */,
 				A43B149C2864B72500F4288D /* Assets.xcassets */,
 				A43B149E2864B72500F4288D /* Preview Content */,
@@ -139,9 +139,44 @@
 		A464B1752865F68C008E11BA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A464B1762865F6B1008E11BA /* Modifiers.swift */,
+				A4C9D21D2867777400DC46DA /* ViewModifiers */,
+				A4C9D21C2867776300DC46DA /* User */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A4C9D21C2867776300DC46DA /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A4C9D21A2867775E00DC46DA /* UserPreferences.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A4C9D21D2867777400DC46DA /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A464B1762865F6B1008E11BA /* Modifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		A4C9D21E2867779600DC46DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */,
+				A4C9D21F286777A700DC46DA /* Onboarding */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A4C9D21F286777A700DC46DA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A43B149A2864B72100F4288D /* ContentView.swift */,
+				A4E9C1922864F63700E131D9 /* PageView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */,
+				A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */,
 				A43B149B2864B72100F4288D /* ContentView.swift in Sources */,
 				A4B35D272866395C00FAB0E7 /* PerfilView.swift in Sources */,
 				A4E9C1932864F63700E131D9 /* PageView.swift in Sources */,

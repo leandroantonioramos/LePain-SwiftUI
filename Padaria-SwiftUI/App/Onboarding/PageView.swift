@@ -49,6 +49,7 @@ struct PageView: View, Identifiable {
                         .simultaneousGesture(TapGesture().onEnded {
                             onboardingCompleteStatus.toggle()
                             updateOnboardingInfo()
+//                            resetDefaults()
                         })
                         .frame(minWidth: 0,
                                maxWidth: .infinity)
@@ -87,9 +88,18 @@ struct PageView: View, Identifiable {
     func updateOnboardingInfo()
     {
         if onboardingCompleteStatus {
-            UserDefaults.standard.set(onboardingCompleteStatus, forKey: "completed")
+            UserPreferences.shared.isCompleted = onboardingCompleteStatus
         } else {
-            UserDefaults.standard.set(onboardingCompleteStatus, forKey: "incomplete")
+            UserPreferences.shared.isCompleted = onboardingCompleteStatus
+        }
+    }
+
+    func resetDefaults()
+    {
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
         }
     }
 }
