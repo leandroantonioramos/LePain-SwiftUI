@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PageView: View, Identifiable {
-    @State private var hasCompleteOnboarding = false
+    @State private var onboardingCompleteStatus = false
 
     var id = UUID()
     var imageName: String? = nil
@@ -46,7 +46,8 @@ struct PageView: View, Identifiable {
                         NavigationLink(destination: PerfilView()) {
                             Text(pageViewString(text: buttonTitle))
                         }.simultaneousGesture(TapGesture().onEnded{
-                            updateOnboardingInfo(isCompleted: hasButton)
+                            onboardingCompleteStatus.toggle()
+                            updateOnboardingInfo()
                         })
                         .frame(minWidth: 0,
                                maxWidth: .infinity)
@@ -82,12 +83,12 @@ struct PageView: View, Identifiable {
         return hasButton
     }
 
-    func updateOnboardingInfo(isCompleted: Bool?)
+    func updateOnboardingInfo()
     {
-        guard let isCompleted = isCompleted else {
-            return
+        if onboardingCompleteStatus {
+            UserDefaults.standard.set(onboardingCompleteStatus, forKey: "completed")
+        } else {
+            UserDefaults.standard.set(onboardingCompleteStatus, forKey: "incomplete")
         }
-
-        hasCompleteOnboarding.toggle()
     }
 }
