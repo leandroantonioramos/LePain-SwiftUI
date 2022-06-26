@@ -14,10 +14,11 @@
 		A43B14AA2864B72600F4288D /* Padaria_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14A92864B72600F4288D /* Padaria_SwiftUITests.swift */; };
 		A43B14B42864B72600F4288D /* Padaria_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14B32864B72600F4288D /* Padaria_SwiftUIUITests.swift */; };
 		A43B14B62864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */; };
+		A4540DDA2868A3D600AA7869 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4540DD92868A3D600AA7869 /* PerfilView.swift */; };
 		A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B1762865F6B1008E11BA /* Modifiers.swift */; };
 		A47E32CC2867C9AA0088C79D /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E32CB2867C9AA0088C79D /* PageViewModel.swift */; };
-		A47E32CE2867CBEA0088C79D /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E32CD2867CBEA0088C79D /* PageModel.swift */; };
-		A4B35D272866395C00FAB0E7 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B35D262866395C00FAB0E7 /* PerfilView.swift */; };
+		A4C058702868C5AC002BA689 /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0586F2868C5AC002BA689 /* PerfilModel.swift */; };
+		A4C058722868C70D002BA689 /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C058712868C70D002BA689 /* PerfilViewModel.swift */; };
 		A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9D21A2867775E00DC46DA /* UserPreferences.swift */; };
 		A4E9C1932864F63700E131D9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9C1922864F63700E131D9 /* PageView.swift */; };
 /* End PBXBuildFile section */
@@ -50,10 +51,11 @@
 		A43B14AF2864B72600F4288D /* Padaria-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Padaria-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43B14B32864B72600F4288D /* Padaria_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4540DD92868A3D600AA7869 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		A464B1762865F6B1008E11BA /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		A47E32CB2867C9AA0088C79D /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
-		A47E32CD2867CBEA0088C79D /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
-		A4B35D262866395C00FAB0E7 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		A4C0586F2868C5AC002BA689 /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
+		A4C058712868C70D002BA689 /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
 		A4C9D21A2867775E00DC46DA /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		A4E9C1922864F63700E131D9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +110,6 @@
 			children = (
 				A4C9D21E2867779600DC46DA /* App */,
 				A464B1752865F68C008E11BA /* Helpers */,
-				A4B35D262866395C00FAB0E7 /* PerfilView.swift */,
 				A43B149C2864B72500F4288D /* Assets.xcassets */,
 				A43B149E2864B72500F4288D /* Preview Content */,
 			);
@@ -140,6 +141,16 @@
 			path = "Padaria-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
+		A4540DD62868A38100AA7869 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				A4540DD92868A3D600AA7869 /* PerfilView.swift */,
+				A4C0586F2868C5AC002BA689 /* PerfilModel.swift */,
+				A4C058712868C70D002BA689 /* PerfilViewModel.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
 		A464B1752865F68C008E11BA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */,
+				A4540DD62868A38100AA7869 /* Perfil */,
 				A4C9D21F286777A700DC46DA /* Onboarding */,
 			);
 			path = App;
@@ -179,7 +191,6 @@
 			children = (
 				A43B149A2864B72100F4288D /* ContentView.swift */,
 				A4E9C1922864F63700E131D9 /* PageView.swift */,
-				A47E32CD2867CBEA0088C79D /* PageModel.swift */,
 				A47E32CB2867C9AA0088C79D /* PageViewModel.swift */,
 			);
 			path = Onboarding;
@@ -315,13 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A47E32CE2867CBEA0088C79D /* PageModel.swift in Sources */,
+				A4540DDA2868A3D600AA7869 /* PerfilView.swift in Sources */,
 				A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */,
+				A4C058702868C5AC002BA689 /* PerfilModel.swift in Sources */,
 				A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */,
 				A43B149B2864B72100F4288D /* ContentView.swift in Sources */,
 				A47E32CC2867C9AA0088C79D /* PageViewModel.swift in Sources */,
-				A4B35D272866395C00FAB0E7 /* PerfilView.swift in Sources */,
 				A4E9C1932864F63700E131D9 /* PageView.swift in Sources */,
+				A4C058722868C70D002BA689 /* PerfilViewModel.swift in Sources */,
 				A43B14992864B72100F4288D /* Padaria_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

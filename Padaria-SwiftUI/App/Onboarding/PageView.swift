@@ -36,14 +36,14 @@ struct PageView: View, Identifiable {
                     VStack (spacing: 10) {
                         Text(pageViewString(text: title))
                             .fontWeight(.bold)
-                            .font(.system(size: 24))
+                            .font(.title)
                             .multilineTextAlignment(.center)
                         Text(pageViewString(text: subtitle))
                             .multilineTextAlignment(.center)
-                            .font(.system(size: 16))
+                            .font(.body)
                     }
                     VStack (alignment: .center) {
-                        NavigationLink(destination: PerfilView()) {
+                        NavigationLink(destination: PerfilView(viewModel: PerfilViewModel())) {
                             Text(pageViewString(text: buttonTitle))
                         }
                         .simultaneousGesture(TapGesture().onEnded {
