@@ -9,7 +9,7 @@ struct Padaria_SwiftUIApp: App {
                     PerfilView()
                 }
             } else {
-                ContentView()
+                ContentView(viewModel: PageViewModel())
             }
         }
     }

@@ -1,29 +1,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    let pages = [
-        PageView(imageName: "map",
-                 title: "Saiba sempre onde ir",
-                 subtitle: "Torne a padaria mais próxima de você, na sua favorita",
-                 hasButton: true),
-        PageView(imageName: "mappin",
-                 title: "E quem não gosta de um pão quentinho?",
-                 subtitle: "Sabendo que horas estará pronto, é só ir buscar.",
-                 buttonTitle: "Continuar",
-                 hasButton: false)
-    ]
+    @ObservedObject var viewModel: PageViewModel
 
     var body: some View {
         NavigationView {
             ScrollView (.horizontal,
                         showsIndicators: true) {
                 TabView {
-                    ForEach(pages) {
-                        PageView(imageName: $0.imageName,
-                                 title: $0.title,
-                                 subtitle: $0.subtitle,
-                                 buttonTitle: $0.buttonTitle,
-                                 hasButton: $0.hasButton)
+                    ForEach(viewModel.pages) { page in
+                        PageView(imageName: page.imageName,
+                                 title: page.title,
+                                 subtitle: page.subtitle,
+                                 buttonTitle: page.buttonTitle,
+                                 hasButton: page.hasButton)
                     }
                 }
                 .background(Color("background"))
@@ -38,7 +28,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: PageViewModel())
     }
 }
 
