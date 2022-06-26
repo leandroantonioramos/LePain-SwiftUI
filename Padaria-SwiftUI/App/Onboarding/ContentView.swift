@@ -31,6 +31,11 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(viewModel: PageViewModel())
 //            .previewDevice("iPhone 13 Pro Max")
             .previewDevice("iPhone SE")
+            .environment(\.colorScheme, .light)
+        ContentView(viewModel: PageViewModel())
+//            .previewDevice("iPhone 13 Pro Max")
+            .previewDevice("iPhone SE")
+            .environment(\.colorScheme, .dark)
     }
 }
 

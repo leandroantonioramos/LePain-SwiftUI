@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct PerfilView: View {
+    @Environment(\.colorScheme) var colorScheme
+
     @ObservedObject var viewModel: PerfilViewModel
 
     @State var username: String = ""
@@ -26,17 +28,20 @@ struct PerfilView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 30)
-                        TextField(viewModel.perfil.placeHolder,
-                                  text: $username)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .cornerRadius(15)
-                            .frame(width: .infinity,
-                                   height: 50)
+                        TextField(viewModel.perfil.placeHolder, text: $username)
+                        .padding(.horizontal , 15)
+                        .frame(height: 40.0)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(colorScheme == .dark ? Color.white : Color.black,
+                                        lineWidth: 2)
+                        )
                     }
                     Spacer()
                     VStack {
                         NavigationLink(destination: PerfilView(viewModel: viewModel)) {
                             Text(viewModel.perfil.buttonTitle)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         }
                         .simultaneousGesture(TapGesture().onEnded {
                             //TODO: - Implement
@@ -48,7 +53,7 @@ struct PerfilView: View {
                         .foregroundColor(.white)
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color.white,
+                                .stroke(colorScheme == .dark ? Color.white : Color.black,
                                         lineWidth: 2))
 
                     }
@@ -66,5 +71,11 @@ struct PerfilView_Previews: PreviewProvider {
         PerfilView(viewModel: PerfilViewModel())
 //            .previewDevice("iPhone 13 Pro Max")
             .previewDevice("iPhone SE")
+            .environment(\.colorScheme, .dark)
+
+        PerfilView(viewModel: PerfilViewModel())
+//            .previewDevice("iPhone 13 Pro Max")
+            .previewDevice("iPhone 13")
+            .environment(\.colorScheme, .light)
     }
 }
