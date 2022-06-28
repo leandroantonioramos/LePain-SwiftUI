@@ -6,7 +6,7 @@ struct Padaria_SwiftUIApp: App {
         WindowGroup {
             if UserDefaults.standard.bool(forKey: "completed") {
                 NavigationView {
-                    PerfilView(viewModel: PerfilViewModel())
+                    PerfilView(viewModel: PerfilView.ViewModel())
                 }
             } else {
                 ContentView(viewModel: PageViewModel())

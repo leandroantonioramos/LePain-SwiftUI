@@ -29,12 +29,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(viewModel: PageViewModel())
-//            .previewDevice("iPhone 13 Pro Max")
             .previewDevice("iPhone SE")
             .environment(\.colorScheme, .light)
         ContentView(viewModel: PageViewModel())
-//            .previewDevice("iPhone 13 Pro Max")
-            .previewDevice("iPhone SE")
+            .previewDevice("iPhone 13 Pro Max")
             .environment(\.colorScheme, .dark)
     }
 }

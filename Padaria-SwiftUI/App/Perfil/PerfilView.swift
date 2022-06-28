@@ -3,9 +3,7 @@ import SwiftUI
 struct PerfilView: View {
     @Environment(\.colorScheme) var colorScheme
 
-    @ObservedObject var viewModel: PerfilViewModel
-
-    @State var username: String = ""
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         ZStack (alignment: .top) {
@@ -13,22 +11,24 @@ struct PerfilView: View {
             VStack (spacing: 20) {
                 VStack (spacing: 15) {
                     Text(viewModel.perfil.title)
-                        .font(.title)
+                        .font(.title2)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity,
                                alignment: .leading)
                         .multilineTextAlignment(.leading)
+                        .lineLimit(2)
                     Text(viewModel.perfil.subtitile)
-                        .multilineTextAlignment(.leading)
                         .font(.body)
                         .frame(maxWidth: .infinity,
                                alignment: .leading)
+                        .multilineTextAlignment(.leading)
                     HStack (spacing: 10) {
                         Image(systemName: "person.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 30)
-                        TextField(viewModel.perfil.placeHolder, text: $username)
+                        TextField(viewModel.perfil.placeHolder,
+                                  text: $viewModel.username)
                         .padding(.horizontal , 15)
                         .frame(height: 40.0)
                         .overlay(
@@ -44,7 +44,7 @@ struct PerfilView: View {
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         }
                         .simultaneousGesture(TapGesture().onEnded {
-                            //TODO: - Implement
+                            viewModel.getUsername()
                         })
                         .frame(minWidth: 0,
                                maxWidth: .infinity)
@@ -55,7 +55,7 @@ struct PerfilView: View {
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(colorScheme == .dark ? Color.white : Color.black,
                                         lineWidth: 2))
-
+                        .isHidden(viewModel.username.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                     }
                 }
                 .padding()
@@ -68,14 +68,12 @@ struct PerfilView: View {
 
 struct PerfilView_Previews: PreviewProvider {
     static var previews: some View {
-        PerfilView(viewModel: PerfilViewModel())
-//            .previewDevice("iPhone 13 Pro Max")
+        PerfilView(viewModel: PerfilView.ViewModel())
             .previewDevice("iPhone SE")
             .environment(\.colorScheme, .dark)
 
-        PerfilView(viewModel: PerfilViewModel())
-//            .previewDevice("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13")
+        PerfilView(viewModel: PerfilView.ViewModel())
+            .previewDevice("iPhone 13 Pro Max")
             .environment(\.colorScheme, .light)
     }
 }

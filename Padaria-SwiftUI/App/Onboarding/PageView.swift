@@ -43,7 +43,7 @@ struct PageView: View, Identifiable {
                             .font(.body)
                     }
                     VStack (alignment: .center) {
-                        NavigationLink(destination: PerfilView(viewModel: PerfilViewModel())) {
+                        NavigationLink(destination: PerfilView(viewModel: PerfilView.ViewModel())) {
                             Text(pageViewString(text: buttonTitle))
                         }
                         .simultaneousGesture(TapGesture().onEnded {
