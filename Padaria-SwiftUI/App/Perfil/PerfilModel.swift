@@ -1,10 +1,12 @@
 import Foundation
 
-struct PerfilModel: Identifiable {
-    var id = UUID()
-    var sceneTitle: String
-    var title: String
-    var subtitile: String
-    var placeHolder: String
-    var buttonTitle: String
+extension PerfilView {
+    struct Model: Identifiable {
+        var id = UUID()
+        var sceneTitle: String
+        var title: String
+        var subtitile: String
+        var placeHolder: String
+        var buttonTitle: String
+    }
 }

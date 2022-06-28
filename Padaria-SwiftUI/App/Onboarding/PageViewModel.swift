@@ -1,6 +1,7 @@
 import Foundation
 
-final class PageViewModel: ObservableObject {
+extension PageView {
+final class ViewModel: ObservableObject {
     @Published var pages = [
         PageView(imageName: "map",
                  title: "Saiba sempre onde ir",
@@ -12,4 +13,5 @@ final class PageViewModel: ObservableObject {
                  buttonTitle: "Continuar",
                  hasButton: false)
     ]
+}
 }

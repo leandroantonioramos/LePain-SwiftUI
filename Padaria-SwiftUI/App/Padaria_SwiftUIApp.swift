@@ -6,10 +6,14 @@ struct Padaria_SwiftUIApp: App {
         WindowGroup {
             if UserDefaults.standard.bool(forKey: "completed") {
                 NavigationView {
-                    PerfilView(viewModel: PerfilView.ViewModel())
+                    if UserDefaults.standard.bool(forKey: "saved") {
+                        Text("Open the with a map on it")
+                    } else {
+                        PerfilView(viewModel: PerfilView.ViewModel())
+                    }
                 }
             } else {
-                ContentView(viewModel: PageViewModel())
+                ContentView(viewModel: PageView.ViewModel())
             }
         }
     }

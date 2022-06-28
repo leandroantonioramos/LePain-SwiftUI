@@ -39,11 +39,12 @@ struct PerfilView: View {
                     }
                     Spacer()
                     VStack {
-                        NavigationLink(destination: PerfilView(viewModel: viewModel)) {
+                        NavigationLink(destination: Text("Also view with map services")) {
                             Text(viewModel.perfil.buttonTitle)
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         }
                         .simultaneousGesture(TapGesture().onEnded {
+                            viewModel.hasSavedData.toggle()
                             viewModel.getUsername()
                         })
                         .frame(minWidth: 0,

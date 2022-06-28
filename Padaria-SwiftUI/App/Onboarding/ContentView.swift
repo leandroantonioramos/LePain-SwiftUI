@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: PageViewModel
+    @ObservedObject var viewModel: PageView.ViewModel
 
     var body: some View {
         NavigationView {
@@ -28,10 +28,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: PageViewModel())
+        ContentView(viewModel: PageView.ViewModel())
             .previewDevice("iPhone SE")
             .environment(\.colorScheme, .light)
-        ContentView(viewModel: PageViewModel())
+        ContentView(viewModel: PageView.ViewModel())
             .previewDevice("iPhone 13 Pro Max")
             .environment(\.colorScheme, .dark)
     }
