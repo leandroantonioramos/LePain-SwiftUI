@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView (.horizontal,
-                        showsIndicators: true) {
+                        showsIndicators: false) {
                 TabView {
                     ForEach(viewModel.pages) { page in
                         PageView(imageName: page.imageName,

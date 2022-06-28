@@ -16,7 +16,6 @@ struct PerfilView: View {
                         .frame(maxWidth: .infinity,
                                alignment: .leading)
                         .multilineTextAlignment(.leading)
-                        .lineLimit(2)
                     Text(viewModel.perfil.subtitile)
                         .font(.body)
                         .frame(maxWidth: .infinity,
@@ -29,13 +28,13 @@ struct PerfilView: View {
                             .frame(height: 30)
                         TextField(viewModel.perfil.placeHolder,
                                   text: $viewModel.username)
-                        .padding(.horizontal , 15)
-                        .frame(height: 40.0)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(colorScheme == .dark ? Color.white : Color.black,
-                                        lineWidth: 2)
-                        )
+                            .padding(.horizontal , 15)
+                            .frame(height: 40.0)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(colorScheme == .dark ? Color.white : Color.black,
+                                            lineWidth: 2)
+                            )
                     }
                     Spacer()
                     VStack {
@@ -53,15 +52,17 @@ struct PerfilView: View {
                         .padding()
                         .foregroundColor(.white)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 25)
+                            RoundedRectangle(cornerRadius: 20)
                                 .stroke(colorScheme == .dark ? Color.white : Color.black,
                                         lineWidth: 2))
-                        .isHidden(viewModel.username.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                        .cornerRadius(20, antialiased: true)
+                        .isDisabled(viewModel.username.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                     }
                 }
                 .padding()
             }
         }
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .navigationTitle(viewModel.perfil.sceneTitle)
     }

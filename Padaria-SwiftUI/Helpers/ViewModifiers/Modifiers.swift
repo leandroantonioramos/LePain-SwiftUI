@@ -8,4 +8,12 @@ extension View {
            self
         }
     }
+
+    @ViewBuilder func isDisabled(_ disable: Bool) -> some View {
+        if disable {
+            self.disabled(disable)
+        } else {
+            self
+        }
+    }
 }
