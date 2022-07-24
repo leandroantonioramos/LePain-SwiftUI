@@ -8,6 +8,8 @@ struct Padaria_SwiftUIApp: App {
                 NavigationView {
                     if UserDefaults.standard.bool(forKey: "saved") {
                         Text("Open the with a map on it")
+                            .navigationBarBackButtonHidden(true)
+                            .navigationBarHidden(true)
                     } else {
                         PerfilView(viewModel: PerfilView.ViewModel())
                     }
