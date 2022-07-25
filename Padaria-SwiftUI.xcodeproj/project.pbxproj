@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806F452B49C673FA2506BEDC /* Pods_Padaria_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FA4C23267801BC449144DC /* Pods_Padaria_SwiftUITests.framework */; };
+		A4222865288CE5EB00BC5CEE /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4222864288CE5EB00BC5CEE /* LandingPageView.swift */; };
 		A43B14992864B72100F4288D /* Padaria_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */; };
 		A43B149B2864B72100F4288D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B149A2864B72100F4288D /* ContentView.swift */; };
 		A43B149D2864B72500F4288D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43B149C2864B72500F4288D /* Assets.xcassets */; };
@@ -20,7 +22,9 @@
 		A4C058702868C5AC002BA689 /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0586F2868C5AC002BA689 /* PerfilModel.swift */; };
 		A4C058722868C70D002BA689 /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C058712868C70D002BA689 /* PerfilViewModel.swift */; };
 		A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9D21A2867775E00DC46DA /* UserPreferences.swift */; };
+		A4CBC761288DC24A0036FA95 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CBC760288DC24A0036FA95 /* MapView.swift */; };
 		A4E9C1932864F63700E131D9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9C1922864F63700E131D9 /* PageView.swift */; };
+		F8A7C1BEF479C684BE163323 /* Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC949992868134BAAFC71DD /* Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183223BFC97D878ABC51D973 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94068F098E3D7679469D839E /* Pods-Padaria-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Padaria-SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Padaria-SwiftUITests/Pods-Padaria-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F38BEA1E318BC48E526B736 /* Pods-Padaria-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Padaria-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		9FC949992868134BAAFC71DD /* Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A008F44172E68157A0982E67 /* Pods-Padaria-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Padaria-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		A4222864288CE5EB00BC5CEE /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
 		A43B14952864B72100F4288D /* Padaria-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Padaria-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIApp.swift; sourceTree = "<group>"; };
 		A43B149A2864B72100F4288D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +67,12 @@
 		A4C0586F2868C5AC002BA689 /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
 		A4C058712868C70D002BA689 /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
 		A4C9D21A2867775E00DC46DA /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		A4CBC760288DC24A0036FA95 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A4E9C1922864F63700E131D9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		D5FA4C23267801BC449144DC /* Pods_Padaria_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Padaria_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E462100D8B2F7F8C6E5F62F0 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C68D2BD4A764F1EB7C645A /* Pods-Padaria-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Padaria-SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Padaria-SwiftUITests/Pods-Padaria-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F80531D04AFEB75B4241988C /* Pods_Padaria_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Padaria_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806F452B49C673FA2506BEDC /* Pods_Padaria_SwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +95,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A7C1BEF479C684BE163323 /* Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D5FC8D7BA3BBEA94848FD4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80531D04AFEB75B4241988C /* Pods_Padaria_SwiftUI.framework */,
+				9FC949992868134BAAFC71DD /* Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework */,
+				D5FA4C23267801BC449144DC /* Pods_Padaria_SwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4222863288CE5B700BC5CEE /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				A4222864288CE5EB00BC5CEE /* LandingPageView.swift */,
+				A4CBC75C288DB8840036FA95 /* MapView */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
 		A43B148C2864B72100F4288D = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +128,8 @@
 				A43B14A82864B72600F4288D /* Padaria-SwiftUITests */,
 				A43B14B22864B72600F4288D /* Padaria-SwiftUIUITests */,
 				A43B14962864B72100F4288D /* Products */,
+				E168DE3A9819BCEC91C65A6B /* Pods */,
+				4D5FC8D7BA3BBEA94848FD4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */,
+				A4222863288CE5B700BC5CEE /* LandingPage */,
 				A4540DD62868A38100AA7869 /* Perfil */,
 				A4C9D21F286777A700DC46DA /* Onboarding */,
 			);
@@ -196,6 +235,27 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		A4CBC75C288DB8840036FA95 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBC760288DC24A0036FA95 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		E168DE3A9819BCEC91C65A6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A008F44172E68157A0982E67 /* Pods-Padaria-SwiftUI.debug.xcconfig */,
+				9F38BEA1E318BC48E526B736 /* Pods-Padaria-SwiftUI.release.xcconfig */,
+				E462100D8B2F7F8C6E5F62F0 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig */,
+				183223BFC97D878ABC51D973 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig */,
+				94068F098E3D7679469D839E /* Pods-Padaria-SwiftUITests.debug.xcconfig */,
+				F6C68D2BD4A764F1EB7C645A /* Pods-Padaria-SwiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A43B14B92864B72600F4288D /* Build configuration list for PBXNativeTarget "Padaria-SwiftUI" */;
 			buildPhases = (
+				BB4E17C63527FB52079D2F55 /* [CP] Check Pods Manifest.lock */,
 				A43B14912864B72100F4288D /* Sources */,
 				A43B14922864B72100F4288D /* Frameworks */,
 				A43B14932864B72100F4288D /* Resources */,
+				C6B2D82161FA145F6E7B86A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A43B14BC2864B72600F4288D /* Build configuration list for PBXNativeTarget "Padaria-SwiftUITests" */;
 			buildPhases = (
+				113BE78AE8347A216D2D5FE8 /* [CP] Check Pods Manifest.lock */,
 				A43B14A12864B72600F4288D /* Sources */,
 				A43B14A22864B72600F4288D /* Frameworks */,
 				A43B14A32864B72600F4288D /* Resources */,
@@ -238,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A43B14BF2864B72600F4288D /* Build configuration list for PBXNativeTarget "Padaria-SwiftUIUITests" */;
 			buildPhases = (
+				1A14464167A4D2496CF94AC7 /* [CP] Check Pods Manifest.lock */,
 				A43B14AB2864B72600F4288D /* Sources */,
 				A43B14AC2864B72600F4288D /* Frameworks */,
 				A43B14AD2864B72600F4288D /* Resources */,
+				60669D86BB94036602CF190B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +386,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		113BE78AE8347A216D2D5FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Padaria-SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A14464167A4D2496CF94AC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60669D86BB94036602CF190B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4E17C63527FB52079D2F55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Padaria-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B2D82161FA145F6E7B86A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A43B14912864B72100F4288D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,10 +497,12 @@
 				A4540DDA2868A3D600AA7869 /* PerfilView.swift in Sources */,
 				A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */,
 				A4C058702868C5AC002BA689 /* PerfilModel.swift in Sources */,
+				A4CBC761288DC24A0036FA95 /* MapView.swift in Sources */,
 				A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */,
 				A43B149B2864B72100F4288D /* ContentView.swift in Sources */,
 				A47E32CC2867C9AA0088C79D /* PageViewModel.swift in Sources */,
 				A4E9C1932864F63700E131D9 /* PageView.swift in Sources */,
+				A4222865288CE5EB00BC5CEE /* LandingPageView.swift in Sources */,
 				A4C058722868C70D002BA689 /* PerfilViewModel.swift in Sources */,
 				A43B14992864B72100F4288D /* Padaria_SwiftUIApp.swift in Sources */,
 			);
@@ -422,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -477,7 +647,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -489,6 +659,7 @@
 		};
 		A43B14BA2864B72600F4288D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A008F44172E68157A0982E67 /* Pods-Padaria-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,10 +668,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Padaria-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = MDDP3J8FL2;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -519,6 +692,7 @@
 		};
 		A43B14BB2864B72600F4288D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F38BEA1E318BC48E526B736 /* Pods-Padaria-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,10 +701,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Padaria-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = MDDP3J8FL2;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -539,6 +715,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beardblack.Padaria-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -549,6 +726,7 @@
 		};
 		A43B14BD2864B72600F4288D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94068F098E3D7679469D839E /* Pods-Padaria-SwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +747,7 @@
 		};
 		A43B14BE2864B72600F4288D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C68D2BD4A764F1EB7C645A /* Pods-Padaria-SwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -589,6 +768,7 @@
 		};
 		A43B14C02864B72600F4288D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E462100D8B2F7F8C6E5F62F0 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +787,7 @@
 		};
 		A43B14C12864B72600F4288D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183223BFC97D878ABC51D973 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,15 +1,19 @@
+import GoogleMaps
+import GooglePlaces
 import SwiftUI
+
+let APIKey = "keyHere"
 
 @main
 struct Padaria_SwiftUIApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             if UserDefaults.standard.bool(forKey: "completed") {
                 NavigationView {
                     if UserDefaults.standard.bool(forKey: "saved") {
-                        Text("Open the with a map on it")
-                            .navigationBarBackButtonHidden(true)
-                            .navigationBarHidden(true)
+                        LandingPageView()
                     } else {
                         PerfilView(viewModel: PerfilView.ViewModel())
                     }
@@ -20,3 +24,11 @@ struct Padaria_SwiftUIApp: App {
         }
     }
 }
+
+class AppDelegate: NSObject, UIApplicationDelegate    {
+     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+         GMSServices.provideAPIKey(APIKey)
+         GMSPlacesClient.provideAPIKey(APIKey)
+         return true
+     }
+ }

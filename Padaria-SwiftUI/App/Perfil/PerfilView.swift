@@ -38,9 +38,7 @@ struct PerfilView: View {
                     }
                     Spacer()
                     VStack {
-                        NavigationLink(destination: Text("Also view with map services")
-                            .navigationBarBackButtonHidden(true)
-                            .navigationBarHidden(true)) {
+                        NavigationLink(destination: LandingPageView()) {
                             Text(viewModel.perfil.buttonTitle)
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         }

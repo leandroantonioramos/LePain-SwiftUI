@@ -1,0 +1,1046 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9C94FBBEEFB700C4478289AF59ED693A /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GooglePlaces;
+		};
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0088DBF5226B5958A635EB32AAFDB4CA /* Pods-Padaria-SwiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3146B34EF108A00EEFB00F310330BDF0 /* Pods-Padaria-SwiftUITests-dummy.m */; };
+		236918DFBE018B2C5DDBFB74666C7366 /* Pods-Padaria-SwiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B79A0C0EC08450BAB9379487F129EA94 /* Pods-Padaria-SwiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D98DAA76F6FA8BD8467563E1174ADA6 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0682486E2EB3F56CB0432774B566B189 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-dummy.m */; };
+		909E273A12C5907C69971DC0E4598B37 /* Pods-Padaria-SwiftUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 019B3E00541A90F97865396036885976 /* Pods-Padaria-SwiftUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A9C2284C7A39C58F67B9FD950525379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A2515F80184D7456D501FD6182FD0794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BDB3B815E17F8DA434F49583D6D47BCC /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1582C366C1A07747847AC776A8086E3A /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C823CF7641584F7B09B61278A1B8802A /* Pods-Padaria-SwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02AE851C529B78E5551FC0888B0A5168 /* Pods-Padaria-SwiftUI-dummy.m */; };
+		DEC5DF6953BD3381A75433EA2A11D823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E6DD2C3EC7C369165E73E01F61217CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		9286B82BF8BB12B10B252FF506FBA6C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		C05A558C909C525180BB05826D17DA97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		C865E12E3B39001F852AFFFA2DFCA946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D94843241CBF02ED370F9A48D2803CCB;
+			remoteInfo = "Pods-Padaria-SwiftUI";
+		};
+		FC9703AF6F89EFF5743376544455AEC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019B3E00541A90F97865396036885976 /* Pods-Padaria-SwiftUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Padaria-SwiftUI-umbrella.h"; sourceTree = "<group>"; };
+		02AE851C529B78E5551FC0888B0A5168 /* Pods-Padaria-SwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Padaria-SwiftUI-dummy.m"; sourceTree = "<group>"; };
+		0682486E2EB3F56CB0432774B566B189 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-dummy.m"; sourceTree = "<group>"; };
+		069889D6BFB2EB3333FEB79D6CE16378 /* Pods-Padaria-SwiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Padaria-SwiftUITests.modulemap"; sourceTree = "<group>"; };
+		0A402EE5600281F41783F6DC019F9989 /* Pods-Padaria-SwiftUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Padaria-SwiftUI"; path = Pods_Padaria_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC661064B28FA0398815DA6FEA173E0 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests"; path = Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1582C366C1A07747847AC776A8086E3A /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-umbrella.h"; sourceTree = "<group>"; };
+		1CF90D8954B2D0E4FFA20C1D1D0DDFE4 /* Pods-Padaria-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Padaria-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		23F651581A8A5A322B46718DD384709B /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		3146B34EF108A00EEFB00F310330BDF0 /* Pods-Padaria-SwiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Padaria-SwiftUITests-dummy.m"; sourceTree = "<group>"; };
+		3B64BC871642AF3F940013FF72DC2F6D /* Pods-Padaria-SwiftUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Padaria-SwiftUI.modulemap"; sourceTree = "<group>"; };
+		3C09A9F2E707EBECED5F478F164C3826 /* Pods-Padaria-SwiftUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Padaria-SwiftUI-resources.sh"; sourceTree = "<group>"; };
+		4E256CB72E069B4C851E32F3924687B3 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		50153BFEE52F2AD2D81C9AA62B40027D /* Pods-Padaria-SwiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Padaria-SwiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		55FE5B1202EF82D2667B0E9D14D29FBB /* Pods-Padaria-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Padaria-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		582ED6F0AED332189A94BC1671DB1989 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-resources.sh"; sourceTree = "<group>"; };
+		5EFBB8102A35526098B1CDE0A5A9730E /* Pods-Padaria-SwiftUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Padaria-SwiftUITests-Info.plist"; sourceTree = "<group>"; };
+		714026A6A9BB154818A7C02741EF1C2D /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E9E19EA4245025659BEE071BAE42347 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.modulemap"; sourceTree = "<group>"; };
+		83A18B98783470D8865F36273F036739 /* Pods-Padaria-SwiftUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Padaria-SwiftUI-Info.plist"; sourceTree = "<group>"; };
+		8704E7734F2D03B8EF86CFC319C943BC /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		8D440E58A549DDA0F128906BDC58A79E /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8EBF4D65DD3B0EDCC39AF1C317B7FF1D /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		971C7B834C598FA4A622385B2A098542 /* Pods-Padaria-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Padaria-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C729F3714998C7C3F3D788777A06264 /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E830DD9530F13E283DEC78352A2F03D /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
+		A0480D8055D1A17684934EF0AECD0F73 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4658982FD89F2A77A672D9AFC716B28 /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
+		B6C270D4F0CF56E221A80F2448149B13 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B79A0C0EC08450BAB9379487F129EA94 /* Pods-Padaria-SwiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Padaria-SwiftUITests-umbrella.h"; sourceTree = "<group>"; };
+		BD0B1471BD764CDD42392DDDCC65E93C /* Pods-Padaria-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Padaria-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C14754B60D0DB3F38161881092CA9679 /* Pods-Padaria-SwiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Padaria-SwiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CDD406B140B339778A5D41B73BD33674 /* Pods-Padaria-SwiftUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Padaria-SwiftUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1FE12300BA5E88A77EC2044DE64ED1C /* Pods-Padaria-SwiftUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Padaria-SwiftUITests"; path = Pods_Padaria_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74A4A5FDDD4F90A8A55EB206C7681BC /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		EC0476D76484E05DE722A543ED7599A5 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F42EF96E2501B6B97CD62C3AA3739F57 /* Pods-Padaria-SwiftUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Padaria-SwiftUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8C3BB261D41EB0A05EAE541E50E3DAB /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FA12A18F12A10F6BE94B10C390987756 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15366F0C4C549A68AEC55DA430DE9D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2515F80184D7456D501FD6182FD0794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CE66BF71555D761C65A16678663699 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC5DF6953BD3381A75433EA2A11D823 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7808F9E247163005FD452823905C0DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9C2284C7A39C58F67B9FD950525379 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01178CDE9E7F5E928EDC642D6B628FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EBF4D65DD3B0EDCC39AF1C317B7FF1D /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0883B537F1FDF67277437486C4066E63 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				E86A34344FF943F078B6064D778D230A /* Base */,
+				A38D68C78C032F2CEEEEED36818D37F0 /* Maps */,
+				6C8EBDD6FEE473D639E9FF7A802869C0 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		1EE86ABE89C2637803CE00E4C058725B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A402EE5600281F41783F6DC019F9989 /* Pods-Padaria-SwiftUI */,
+				0BC661064B28FA0398815DA6FEA173E0 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */,
+				E1FE12300BA5E88A77EC2044DE64ED1C /* Pods-Padaria-SwiftUITests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3582EF5F85D78C1DB07F01BC0BFA167E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C729F3714998C7C3F3D788777A06264 /* GooglePlaces.debug.xcconfig */,
+				A4658982FD89F2A77A672D9AFC716B28 /* GooglePlaces.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		3FE4CC4B7B0241873FFF96886667937D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8704E7734F2D03B8EF86CFC319C943BC /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		446F55954A1B4F44697D4CD53ABC566B /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				3FE4CC4B7B0241873FFF96886667937D /* Frameworks */,
+				7DDA47E3D8C82ADCB64F7C6FC9641D65 /* Resources */,
+				3582EF5F85D78C1DB07F01BC0BFA167E /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BF35F1B83FB0844A3CBEC0B6AE114CD /* Pods-Padaria-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				3B64BC871642AF3F940013FF72DC2F6D /* Pods-Padaria-SwiftUI.modulemap */,
+				F42EF96E2501B6B97CD62C3AA3739F57 /* Pods-Padaria-SwiftUI-acknowledgements.markdown */,
+				CDD406B140B339778A5D41B73BD33674 /* Pods-Padaria-SwiftUI-acknowledgements.plist */,
+				02AE851C529B78E5551FC0888B0A5168 /* Pods-Padaria-SwiftUI-dummy.m */,
+				83A18B98783470D8865F36273F036739 /* Pods-Padaria-SwiftUI-Info.plist */,
+				3C09A9F2E707EBECED5F478F164C3826 /* Pods-Padaria-SwiftUI-resources.sh */,
+				019B3E00541A90F97865396036885976 /* Pods-Padaria-SwiftUI-umbrella.h */,
+				1CF90D8954B2D0E4FFA20C1D1D0DDFE4 /* Pods-Padaria-SwiftUI.debug.xcconfig */,
+				55FE5B1202EF82D2667B0E9D14D29FBB /* Pods-Padaria-SwiftUI.release.xcconfig */,
+			);
+			name = "Pods-Padaria-SwiftUI";
+			path = "Target Support Files/Pods-Padaria-SwiftUI";
+			sourceTree = "<group>";
+		};
+		6C8EBDD6FEE473D639E9FF7A802869C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA12A18F12A10F6BE94B10C390987756 /* GoogleMaps.debug.xcconfig */,
+				9E830DD9530F13E283DEC78352A2F03D /* GoogleMaps.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		7DDA47E3D8C82ADCB64F7C6FC9641D65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E256CB72E069B4C851E32F3924687B3 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A38D68C78C032F2CEEEEED36818D37F0 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E435AD63DBCE250679648002DC9F8442 /* Frameworks */,
+				FAF4CAFF608973234241B6D824C4FC0F /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		B8E797B8CEF6B3EA3C727500B2BCE2A1 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E9E19EA4245025659BEE071BAE42347 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.modulemap */,
+				8D440E58A549DDA0F128906BDC58A79E /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-acknowledgements.markdown */,
+				B6C270D4F0CF56E221A80F2448149B13 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-acknowledgements.plist */,
+				0682486E2EB3F56CB0432774B566B189 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-dummy.m */,
+				714026A6A9BB154818A7C02741EF1C2D /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-Info.plist */,
+				582ED6F0AED332189A94BC1671DB1989 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-resources.sh */,
+				1582C366C1A07747847AC776A8086E3A /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-umbrella.h */,
+				EC0476D76484E05DE722A543ED7599A5 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig */,
+				A0480D8055D1A17684934EF0AECD0F73 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig */,
+			);
+			name = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests";
+			path = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E858A99A3564099E88E4CF05F26A517D /* Pods */,
+				1EE86ABE89C2637803CE00E4C058725B /* Products */,
+				F708C7CA163851466EE5C69DAAD5F331 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E435AD63DBCE250679648002DC9F8442 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8C3BB261D41EB0A05EAE541E50E3DAB /* GoogleMaps.framework */,
+				23F651581A8A5A322B46718DD384709B /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E858A99A3564099E88E4CF05F26A517D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0883B537F1FDF67277437486C4066E63 /* GoogleMaps */,
+				446F55954A1B4F44697D4CD53ABC566B /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E86A34344FF943F078B6064D778D230A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				01178CDE9E7F5E928EDC642D6B628FE0 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		F708C7CA163851466EE5C69DAAD5F331 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BF35F1B83FB0844A3CBEC0B6AE114CD /* Pods-Padaria-SwiftUI */,
+				B8E797B8CEF6B3EA3C727500B2BCE2A1 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */,
+				F949A73B0CD5AE1DEEAA2DC79502F283 /* Pods-Padaria-SwiftUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F949A73B0CD5AE1DEEAA2DC79502F283 /* Pods-Padaria-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				069889D6BFB2EB3333FEB79D6CE16378 /* Pods-Padaria-SwiftUITests.modulemap */,
+				C14754B60D0DB3F38161881092CA9679 /* Pods-Padaria-SwiftUITests-acknowledgements.markdown */,
+				50153BFEE52F2AD2D81C9AA62B40027D /* Pods-Padaria-SwiftUITests-acknowledgements.plist */,
+				3146B34EF108A00EEFB00F310330BDF0 /* Pods-Padaria-SwiftUITests-dummy.m */,
+				5EFBB8102A35526098B1CDE0A5A9730E /* Pods-Padaria-SwiftUITests-Info.plist */,
+				B79A0C0EC08450BAB9379487F129EA94 /* Pods-Padaria-SwiftUITests-umbrella.h */,
+				BD0B1471BD764CDD42392DDDCC65E93C /* Pods-Padaria-SwiftUITests.debug.xcconfig */,
+				971C7B834C598FA4A622385B2A098542 /* Pods-Padaria-SwiftUITests.release.xcconfig */,
+			);
+			name = "Pods-Padaria-SwiftUITests";
+			path = "Target Support Files/Pods-Padaria-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		FAF4CAFF608973234241B6D824C4FC0F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E74A4A5FDDD4F90A8A55EB206C7681BC /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		266533BB81C092ABA26A24E93798BABB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB3B815E17F8DA434F49583D6D47BCC /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA361915B654185E2809E8BB517E213C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909E273A12C5907C69971DC0E4598B37 /* Pods-Padaria-SwiftUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7A507DB761C8C2686B177CE344A98A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236918DFBE018B2C5DDBFB74666C7366 /* Pods-Padaria-SwiftUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DF044ED1DBD8143F316948EE3F06E24 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BAFD5ED1CD0FC03FABA74CDAB94BE86 /* Build configuration list for PBXNativeTarget "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests" */;
+			buildPhases = (
+				266533BB81C092ABA26A24E93798BABB /* Headers */,
+				B5A13F98E518C7812CAAA4759C0544BF /* Sources */,
+				44CE66BF71555D761C65A16678663699 /* Frameworks */,
+				C234629D3FD9AA7C65C01BC189536DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				697D9394C5030E813263D5E60587C9A6 /* PBXTargetDependency */,
+				671FD866AD889F3CF90339CFD4F0F024 /* PBXTargetDependency */,
+			);
+			name = "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests";
+			productName = Pods_Padaria_SwiftUI_Padaria_SwiftUIUITests;
+			productReference = 0BC661064B28FA0398815DA6FEA173E0 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D11E2778094AC1CA38F95AA6610D76D1 /* Pods-Padaria-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F1D333B00684ADF93715011D458B8FB /* Build configuration list for PBXNativeTarget "Pods-Padaria-SwiftUITests" */;
+			buildPhases = (
+				C7A507DB761C8C2686B177CE344A98A1 /* Headers */,
+				D9E319BEEC27EF7007B9F3ED29DD96F8 /* Sources */,
+				7808F9E247163005FD452823905C0DB3 /* Frameworks */,
+				4DB6C1F4D02E43BD9A59D10039DD2E1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				458C9D6750A803941C61203BC536A3D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Padaria-SwiftUITests";
+			productName = Pods_Padaria_SwiftUITests;
+			productReference = E1FE12300BA5E88A77EC2044DE64ED1C /* Pods-Padaria-SwiftUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D94843241CBF02ED370F9A48D2803CCB /* Pods-Padaria-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AADA8BA99C30E4685CB1CEF0EDB5692 /* Build configuration list for PBXNativeTarget "Pods-Padaria-SwiftUI" */;
+			buildPhases = (
+				BA361915B654185E2809E8BB517E213C /* Headers */,
+				5AB2294D3D75F04E3B70A021A957BCEB /* Sources */,
+				15366F0C4C549A68AEC55DA430DE9D40 /* Frameworks */,
+				AACB0417FB029328CFB2107E281386F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571BBC53F8CF78C8359BA721F7FA8330 /* PBXTargetDependency */,
+				19CD572CA8E79480DB1037A409BC49C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Padaria-SwiftUI";
+			productName = Pods_Padaria_SwiftUI;
+			productReference = 0A402EE5600281F41783F6DC019F9989 /* Pods-Padaria-SwiftUI */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1EE86ABE89C2637803CE00E4C058725B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
+				D94843241CBF02ED370F9A48D2803CCB /* Pods-Padaria-SwiftUI */,
+				2DF044ED1DBD8143F316948EE3F06E24 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests */,
+				D11E2778094AC1CA38F95AA6610D76D1 /* Pods-Padaria-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DB6C1F4D02E43BD9A59D10039DD2E1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AACB0417FB029328CFB2107E281386F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C234629D3FD9AA7C65C01BC189536DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AB2294D3D75F04E3B70A021A957BCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C823CF7641584F7B09B61278A1B8802A /* Pods-Padaria-SwiftUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A13F98E518C7812CAAA4759C0544BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D98DAA76F6FA8BD8467563E1174ADA6 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E319BEEC27EF7007B9F3ED29DD96F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0088DBF5226B5958A635EB32AAFDB4CA /* Pods-Padaria-SwiftUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19CD572CA8E79480DB1037A409BC49C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 9286B82BF8BB12B10B252FF506FBA6C3 /* PBXContainerItemProxy */;
+		};
+		458C9D6750A803941C61203BC536A3D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Padaria-SwiftUI";
+			target = D94843241CBF02ED370F9A48D2803CCB /* Pods-Padaria-SwiftUI */;
+			targetProxy = C865E12E3B39001F852AFFFA2DFCA946 /* PBXContainerItemProxy */;
+		};
+		571BBC53F8CF78C8359BA721F7FA8330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = C05A558C909C525180BB05826D17DA97 /* PBXContainerItemProxy */;
+		};
+		671FD866AD889F3CF90339CFD4F0F024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = FC9703AF6F89EFF5743376544455AEC9 /* PBXContainerItemProxy */;
+		};
+		697D9394C5030E813263D5E60587C9A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 7E6DD2C3EC7C369165E73E01F61217CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0657E6247C7E8744275AACEBAB511440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA12A18F12A10F6BE94B10C390987756 /* GoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D45EB49F34C56FE4CA9D57291F6E87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FE5B1202EF82D2667B0E9D14D29FBB /* Pods-Padaria-SwiftUI.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24069BB3B6E16DED8CC95987BEACAF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4658982FD89F2A77A672D9AFC716B28 /* GooglePlaces.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		50A794C34BF88C4E45C5CD5A8B98943F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0476D76484E05DE722A543ED7599A5 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EAF3A76D10AF0EDE3D758191B17F1D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF90D8954B2D0E4FFA20C1D1D0DDFE4 /* Pods-Padaria-SwiftUI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Padaria-SwiftUI/Pods-Padaria-SwiftUI.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8B93FAE3A6CC74DB7B1482FADE49EB55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0480D8055D1A17684934EF0AECD0F73 /* Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests/Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F60B1C012EB8113FC1C9756FF1F9FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971C7B834C598FA4A622385B2A098542 /* Pods-Padaria-SwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Padaria-SwiftUITests/Pods-Padaria-SwiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Padaria-SwiftUITests/Pods-Padaria-SwiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C36EC2744E968A453E8CE2CB5CCFAA85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C729F3714998C7C3F3D788777A06264 /* GooglePlaces.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E63604E87CFDEB7454B0D2DC3D3E6A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0B1471BD764CDD42392DDDCC65E93C /* Pods-Padaria-SwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Padaria-SwiftUITests/Pods-Padaria-SwiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Padaria-SwiftUITests/Pods-Padaria-SwiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC690621027EA58B5D021A1004DD63B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E830DD9530F13E283DEC78352A2F03D /* GoogleMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F1D333B00684ADF93715011D458B8FB /* Build configuration list for PBXNativeTarget "Pods-Padaria-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63604E87CFDEB7454B0D2DC3D3E6A4B /* Debug */,
+				8F60B1C012EB8113FC1C9756FF1F9FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0657E6247C7E8744275AACEBAB511440 /* Debug */,
+				EC690621027EA58B5D021A1004DD63B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BAFD5ED1CD0FC03FABA74CDAB94BE86 /* Build configuration list for PBXNativeTarget "Pods-Padaria-SwiftUI-Padaria-SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A794C34BF88C4E45C5CD5A8B98943F /* Debug */,
+				8B93FAE3A6CC74DB7B1482FADE49EB55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AADA8BA99C30E4685CB1CEF0EDB5692 /* Build configuration list for PBXNativeTarget "Pods-Padaria-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAF3A76D10AF0EDE3D758191B17F1D2 /* Debug */,
+				1D45EB49F34C56FE4CA9D57291F6E87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C94FBBEEFB700C4478289AF59ED693A /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36EC2744E968A453E8CE2CB5CCFAA85 /* Debug */,
+				24069BB3B6E16DED8CC95987BEACAF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
