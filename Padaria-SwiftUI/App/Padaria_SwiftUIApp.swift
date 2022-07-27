@@ -2,7 +2,7 @@ import GoogleMaps
 import GooglePlaces
 import SwiftUI
 
-let APIKey = "keyHere"
+let APIKey = ""
 
 @main
 struct Padaria_SwiftUIApp: App {
@@ -16,19 +16,23 @@ struct Padaria_SwiftUIApp: App {
                         LandingPageView()
                     } else {
                         PerfilView(viewModel: PerfilView.ViewModel())
+                            .navigationBarHidden(false)
                     }
                 }
             } else {
-                ContentView(viewModel: PageView.ViewModel())
+                NavigationView {
+                    ContentView(viewModel: PageView.ViewModel())
+                }
             }
         }
     }
 }
 
 class AppDelegate: NSObject, UIApplicationDelegate    {
-     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-         GMSServices.provideAPIKey(APIKey)
-         GMSPlacesClient.provideAPIKey(APIKey)
-         return true
-     }
- }
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        GMSServices.provideAPIKey(APIKey)
+        GMSPlacesClient.provideAPIKey(APIKey)
+        return true
+    }
+}

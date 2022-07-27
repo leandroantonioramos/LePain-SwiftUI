@@ -2,9 +2,9 @@ import SwiftUI
 
 struct PerfilView: View {
     @Environment(\.colorScheme) var colorScheme
-
+    
     @ObservedObject var viewModel: ViewModel
-
+    
     var body: some View {
         ZStack (alignment: .top) {
             Color("background").edgesIgnoringSafeArea(.all)
@@ -16,18 +16,19 @@ struct PerfilView: View {
                         .frame(maxWidth: .infinity,
                                alignment: .leading)
                         .multilineTextAlignment(.leading)
-                    Text(viewModel.perfil.subtitile)
-                        .font(.body)
-                        .frame(maxWidth: .infinity,
-                               alignment: .leading)
-                        .multilineTextAlignment(.leading)
-                    HStack (spacing: 10) {
-                        Image(systemName: "person.circle")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 30)
-                        TextField(viewModel.perfil.placeHolder,
-                                  text: $viewModel.username)
+                    VStack (spacing: 20) {
+                        Text(viewModel.perfil.subtitile)
+                            .font(.body)
+                            .frame(maxWidth: .infinity,
+                                   alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                        HStack (spacing: 10) {
+                            Image(systemName: "person.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 30)
+                            TextField(viewModel.perfil.placeHolder,
+                                      text: $viewModel.username)
                             .padding(.horizontal , 15)
                             .frame(height: 40.0)
                             .overlay(
@@ -35,6 +36,7 @@ struct PerfilView: View {
                                     .stroke(colorScheme == .dark ? Color.white : Color.black,
                                             lineWidth: 2)
                             )
+                        }
                     }
                     Spacer()
                     VStack {
@@ -61,20 +63,22 @@ struct PerfilView: View {
                 }
                 .padding()
             }
+            .navigationTitle(viewModel.perfil.sceneTitle)
+            .navigationBarHidden(false)
+            .navigationBarBackButtonHidden(true)
         }
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        .navigationTitle(viewModel.perfil.sceneTitle)
     }
 }
 
 struct PerfilView_Previews: PreviewProvider {
     static var previews: some View {
         PerfilView(viewModel: PerfilView.ViewModel())
+            .navigationBarHidden(false)
             .previewDevice("iPhone SE")
             .environment(\.colorScheme, .dark)
-
+        
         PerfilView(viewModel: PerfilView.ViewModel())
+            .navigationBarHidden(false)
             .previewDevice("iPhone 13 Pro Max")
             .environment(\.colorScheme, .light)
     }
