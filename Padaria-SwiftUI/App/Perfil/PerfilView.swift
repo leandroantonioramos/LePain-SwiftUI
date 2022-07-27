@@ -64,7 +64,6 @@ struct PerfilView: View {
                 .padding()
             }
             .navigationTitle(viewModel.perfil.sceneTitle)
-            .navigationBarHidden(false)
             .navigationBarBackButtonHidden(true)
         }
     }
@@ -73,12 +72,10 @@ struct PerfilView: View {
 struct PerfilView_Previews: PreviewProvider {
     static var previews: some View {
         PerfilView(viewModel: PerfilView.ViewModel())
-            .navigationBarHidden(false)
             .previewDevice("iPhone SE")
             .environment(\.colorScheme, .dark)
         
         PerfilView(viewModel: PerfilView.ViewModel())
-            .navigationBarHidden(false)
             .previewDevice("iPhone 13 Pro Max")
             .environment(\.colorScheme, .light)
     }
