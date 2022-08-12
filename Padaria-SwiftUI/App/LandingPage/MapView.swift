@@ -1,20 +1,22 @@
+import Combine
 import GoogleMaps
 import SwiftUI
 
-struct MapView: UIViewRepresentable {    
-    private let zoom: Float = 15.0
-    
+struct MapView: UIViewRepresentable {
+
+    @ObservedObject var locationManager = LocationManager()
+
     func makeUIView(context: Self.Context) -> GMSMapView
     {
+
         let camera = GMSCameraPosition.camera(withLatitude: 0,
                                               longitude: 0,
-                                              zoom: 18.0)
+                                              zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero,
                                      camera: camera)
         mapView.setMinZoom(14, maxZoom: 20)
         mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
-        mapView.settings.myLocationButton = true
         mapView.settings.scrollGestures = true
         mapView.settings.zoomGestures = true
         mapView.settings.rotateGestures = true
@@ -23,10 +25,12 @@ struct MapView: UIViewRepresentable {
 
         return mapView
     }
-    
-    func updateUIView(_ uiView: GMSMapView,
-                      context: Context)
+
+    func updateUIView(_ mapView: GMSMapView,
+                      context: Self.Context)
     {
-        
+        if let myLocation = locationManager.lastKnownLocation {
+            mapView.animate(toLocation: myLocation.coordinate)
+        }
     }
 }

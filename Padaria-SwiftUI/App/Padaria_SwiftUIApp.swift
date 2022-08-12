@@ -2,7 +2,7 @@ import GoogleMaps
 import GooglePlaces
 import SwiftUI
 
-let APIKey = "AIzaSyDzSIJ6D07yHj5gLLHkzd0mFXVOZWEbnkg"
+let APIKey = ""
 
 @main
 struct Padaria_SwiftUIApp: App {
