@@ -17,10 +17,12 @@
 		A43B14B62864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */; };
 		A452AB4628A69E0F00EC8813 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452AB4528A69E0F00EC8813 /* LandingPageView.swift */; };
 		A452AB4828A6AB6F00EC8813 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452AB4728A6AB6F00EC8813 /* MapView.swift */; };
-		A452AB4B28A6B2E300EC8813 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452AB4A28A6B2E300EC8813 /* LocationManager.swift */; };
 		A4540DDA2868A3D600AA7869 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4540DD92868A3D600AA7869 /* PerfilView.swift */; };
 		A464B1772865F6B1008E11BA /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A464B1762865F6B1008E11BA /* Modifiers.swift */; };
+		A468CC8F28CA96CE00618123 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468CC8E28CA96CE00618123 /* MapViewModel.swift */; };
 		A47E32CC2867C9AA0088C79D /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E32CB2867C9AA0088C79D /* PageViewModel.swift */; };
+		A4AD16C028B068F400515A8F /* LandingPageView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD16BF28B068F400515A8F /* LandingPageView+ViewModel.swift */; };
+		A4AD16C228B0699D00515A8F /* LandingPageView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD16C128B0699D00515A8F /* LandingPageView+Model.swift */; };
 		A4C058702868C5AC002BA689 /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0586F2868C5AC002BA689 /* PerfilModel.swift */; };
 		A4C058722868C70D002BA689 /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C058712868C70D002BA689 /* PerfilViewModel.swift */; };
 		A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9D21A2867775E00DC46DA /* UserPreferences.swift */; };
@@ -63,10 +65,12 @@
 		A43B14B52864B72600F4288D /* Padaria_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padaria_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A452AB4528A69E0F00EC8813 /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
 		A452AB4728A6AB6F00EC8813 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		A452AB4A28A6B2E300EC8813 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A4540DD92868A3D600AA7869 /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		A464B1762865F6B1008E11BA /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		A468CC8E28CA96CE00618123 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		A47E32CB2867C9AA0088C79D /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
+		A4AD16BF28B068F400515A8F /* LandingPageView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LandingPageView+ViewModel.swift"; sourceTree = "<group>"; };
+		A4AD16C128B0699D00515A8F /* LandingPageView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LandingPageView+Model.swift"; sourceTree = "<group>"; };
 		A4C0586F2868C5AC002BA689 /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
 		A4C058712868C70D002BA689 /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
 		A4C9D21A2867775E00DC46DA /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
@@ -176,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				A452AB4528A69E0F00EC8813 /* LandingPageView.swift */,
-				A452AB4728A6AB6F00EC8813 /* MapView.swift */,
-				A452AB4928A6B2C800EC8813 /* LocationManager */,
+				A4AD16BF28B068F400515A8F /* LandingPageView+ViewModel.swift */,
+				A4AD16C128B0699D00515A8F /* LandingPageView+Model.swift */,
 			);
 			path = LandingPage;
 			sourceTree = "<group>";
@@ -185,7 +189,6 @@
 		A452AB4928A6B2C800EC8813 /* LocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				A452AB4A28A6B2E300EC8813 /* LocationManager.swift */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
@@ -209,6 +212,39 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A468CC8C28CA969A00618123 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A468CC8E28CA96CE00618123 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A468CC8D28CA96B300618123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A452AB4728A6AB6F00EC8813 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4AD16B428AFF82100515A8F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A452AB4928A6B2C800EC8813 /* LocationManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A4AD16BE28B068C500515A8F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A468CC8D28CA96B300618123 /* View */,
+				A468CC8C28CA969A00618123 /* ViewModel */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		A4C9D21C2867776300DC46DA /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				A43B14982864B72100F4288D /* Padaria_SwiftUIApp.swift */,
+				A4AD16BE28B068C500515A8F /* Map */,
+				A4AD16B428AFF82100515A8F /* Manager */,
 				A452AB4428A69DF000EC8813 /* LandingPage */,
 				A4540DD62868A38100AA7869 /* Perfil */,
 				A4C9D21F286777A700DC46DA /* Onboarding */,
@@ -502,11 +540,13 @@
 				A4C058702868C5AC002BA689 /* PerfilModel.swift in Sources */,
 				A452AB4828A6AB6F00EC8813 /* MapView.swift in Sources */,
 				A4C9D21B2867775E00DC46DA /* UserPreferences.swift in Sources */,
+				A4AD16C228B0699D00515A8F /* LandingPageView+Model.swift in Sources */,
 				A43B149B2864B72100F4288D /* ContentView.swift in Sources */,
 				A47E32CC2867C9AA0088C79D /* PageViewModel.swift in Sources */,
 				A4E9C1932864F63700E131D9 /* PageView.swift in Sources */,
-				A452AB4B28A6B2E300EC8813 /* LocationManager.swift in Sources */,
 				A452AB4628A69E0F00EC8813 /* LandingPageView.swift in Sources */,
+				A468CC8F28CA96CE00618123 /* MapViewModel.swift in Sources */,
+				A4AD16C028B068F400515A8F /* LandingPageView+ViewModel.swift in Sources */,
 				A4C058722868C70D002BA689 /* PerfilViewModel.swift in Sources */,
 				A43B14992864B72100F4288D /* Padaria_SwiftUIApp.swift in Sources */,
 			);
