@@ -23,11 +23,13 @@ extension MapView {
             case .notDetermined:
                 manager.requestWhenInUseAuthorization()
             case .restricted:
-                print("restrict")
+                // TODO: - show alert
+                print("restricted")
             case .denied:
-                print("denied")
+                // TODO: - show alert
+                print("denied") 
             case .authorizedAlways:
-                print("authorizedAlways")
+                manager.requestLocation()
             case .authorizedWhenInUse:
                 manager.requestLocation()
             @unknown default:
