@@ -2,7 +2,7 @@ import MapKit
 import SwiftUI
 
 struct MapView: UIViewRepresentable {
-    @EnvironmentObject var mapViewModel: MapViewModel
+    @EnvironmentObject var mapViewModel: MapView.ViewModel
     
     func makeUIView(context: Context) -> some UIView
     {

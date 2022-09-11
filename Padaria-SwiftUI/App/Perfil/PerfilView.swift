@@ -7,26 +7,34 @@ struct PerfilView: View {
     
     var body: some View {
         ZStack (alignment: .top) {
+            
             Color("background").edgesIgnoringSafeArea(.all)
+            
             VStack (spacing: 20) {
+                
                 VStack (spacing: 15) {
+                    
                     Text(viewModel.perfil.title)
                         .font(.title2)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity,
                                alignment: .leading)
                         .multilineTextAlignment(.leading)
+                    
                     VStack (spacing: 20) {
                         Text(viewModel.perfil.subtitile)
                             .font(.body)
                             .frame(maxWidth: .infinity,
                                    alignment: .leading)
                             .multilineTextAlignment(.leading)
+                        
                         HStack (spacing: 10) {
+                            
                             Image(systemName: "person.circle")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 30)
+                            
                             TextField(viewModel.perfil.placeHolder,
                                       text: $viewModel.username)
                             .padding(.horizontal , 15)
@@ -36,13 +44,19 @@ struct PerfilView: View {
                                     .stroke(colorScheme == .dark ? Color.white : Color.black,
                                             lineWidth: 2)
                             )
+                            
                         }
+                        
                     }
+                    
                     Spacer()
+                    
                     VStack {
+                        
                         NavigationLink(destination: LandingPageView()) {
                             Text(viewModel.perfil.buttonTitle)
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            
                         }
                         .simultaneousGesture(TapGesture().onEnded {
                             viewModel.hasSavedData.toggle()
@@ -60,6 +74,7 @@ struct PerfilView: View {
                         .cornerRadius(20, antialiased: true)
                         .isDisabled(viewModel.username.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                     }
+                    
                 }
                 .padding()
             }

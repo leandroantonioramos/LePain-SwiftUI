@@ -4,7 +4,7 @@ import MapKit
 import SwiftUI
 
 struct LandingPageView: View {
-    @StateObject var mapViewModel = MapViewModel()
+    @StateObject var mapViewModel = MapView.ViewModel()
     @State var locationManager = CLLocationManager()
     
     var body: some View {
