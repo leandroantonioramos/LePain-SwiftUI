@@ -8,6 +8,7 @@ extension MapView {
         @Published var region: MKCoordinateRegion!
         @Published var mapType: MKMapType = .standard
         @Published var searchText = ""
+        @Published var permissionDenied = false
         
         func focusOnLocation()
         {
@@ -23,11 +24,9 @@ extension MapView {
             case .notDetermined:
                 manager.requestWhenInUseAuthorization()
             case .restricted:
-                // TODO: - show alert
-                print("restricted")
+                permissionDenied.toggle()
             case .denied:
-                // TODO: - show alert
-                print("denied") 
+                permissionDenied.toggle()
             case .authorizedAlways:
                 manager.requestLocation()
             case .authorizedWhenInUse:

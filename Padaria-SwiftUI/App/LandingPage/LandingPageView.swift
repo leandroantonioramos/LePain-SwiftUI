@@ -63,6 +63,16 @@ struct LandingPageView: View {
             locationManager.delegate = mapViewModel
             locationManager.requestWhenInUseAuthorization()
         }
+        .alert(isPresented: $mapViewModel.permissionDenied) {
+            
+            Alert(title: Text("Location services denied or restricted"),
+                  message: Text("Please enable location in settings"),
+                  dismissButton: .default(Text("Go to settings"),
+                                          action: {
+                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+            }))
+            
+        }
     }
 }
 

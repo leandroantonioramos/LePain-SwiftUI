@@ -186,13 +186,6 @@
 			path = LandingPage;
 			sourceTree = "<group>";
 		};
-		A452AB4928A6B2C800EC8813 /* LocationManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LocationManager;
-			sourceTree = "<group>";
-		};
 		A4540DD62868A38100AA7869 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +224,6 @@
 		A4AD16B428AFF82100515A8F /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				A452AB4928A6B2C800EC8813 /* LocationManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";

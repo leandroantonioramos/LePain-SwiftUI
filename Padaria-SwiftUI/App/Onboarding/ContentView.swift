@@ -6,7 +6,9 @@ struct ContentView: View {
     var body: some View {
         ScrollView (.horizontal,
                     showsIndicators: false) {
+            
             TabView {
+                
                 ForEach(viewModel.pages) { page in
                     PageView(imageName: page.imageName,
                              title: page.title,
@@ -14,6 +16,7 @@ struct ContentView: View {
                              buttonTitle: page.buttonTitle,
                              hasButton: page.hasButton)
                 }
+                
             }
             .background(Color("background"))
             .frame(width: UIScreen.main.bounds.width,
@@ -34,4 +37,3 @@ struct ContentView_Previews: PreviewProvider {
             .environment(\.colorScheme, .dark)
     }
 }
-

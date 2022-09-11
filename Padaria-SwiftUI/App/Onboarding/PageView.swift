@@ -2,7 +2,7 @@ import SwiftUI
 
 struct PageView: View, Identifiable {
     @State private var onboardingCompleteStatus = false
-
+    
     var id = UUID()
     var imageName: String? = nil
     var title: String? = nil
@@ -25,42 +25,50 @@ struct PageView: View, Identifiable {
     
     var body: some View {
         ZStack {
+            
             VStack {
+                
                 Image(systemName: pageViewString(text: imageName))
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(20)
                     .frame(height: 200)
-                VStack (alignment: .center,
-                        spacing: 60) {
+                
+                VStack (alignment: .center, spacing: 60) {
+                    
                     VStack (spacing: 10) {
+                        
                         Text(pageViewString(text: title))
                             .fontWeight(.bold)
                             .font(.title)
                             .multilineTextAlignment(.center)
+                        
                         Text(pageViewString(text: subtitle))
                             .multilineTextAlignment(.center)
                             .font(.body)
+                        
                     }
+                    
                     VStack (alignment: .center) {
+                        
                         NavigationLink(destination: PerfilView(viewModel: PerfilView.ViewModel())) {
                             Text(pageViewString(text: buttonTitle))
                         }
                         .simultaneousGesture(TapGesture().onEnded {
                             onboardingCompleteStatus.toggle()
                             updateOnboardingInfo()
-//                            resetDefaults()
+                            //resetDefaults()
                         })
                         .frame(minWidth: 0,
                                maxWidth: .infinity)
                         .font(.system(size: 18))
                         .padding()
                         .foregroundColor(.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color.white,
-                                        lineWidth: 2))
+                        .overlay(RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white,
+                                    lineWidth: 2))
                         .isHidden(showButton(hasButton: hasButton))
+                        
                     }
                 }
             }
@@ -84,7 +92,7 @@ struct PageView: View, Identifiable {
         
         return hasButton
     }
-
+    
     func updateOnboardingInfo()
     {
         if onboardingCompleteStatus {
@@ -93,7 +101,7 @@ struct PageView: View, Identifiable {
             UserPreferences.shared.isCompleted = onboardingCompleteStatus
         }
     }
-
+    
     func resetDefaults()
     {
         let defaults = UserDefaults.standard
