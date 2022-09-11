@@ -4,6 +4,7 @@ import MapKit
 import SwiftUI
 
 struct LandingPageView: View {
+    @StateObject var landingPageViewModel = LandingPageView.Model()
     @StateObject var mapViewModel = MapView.ViewModel()
     @State var locationManager = CLLocationManager()
     
@@ -29,13 +30,13 @@ struct LandingPageView: View {
                             .foregroundColor(.gray)
                         
                         TextField("Nome da padaria...",
-                                  text: $mapViewModel.searchText)
+                                  text: $landingPageViewModel.searchText)
                         .colorScheme(.light)
                         
                     }
                     .padding(.vertical, 10)
                     .padding(.horizontal)
-                    .background(Color.white)
+                    .background(Color.clear)
                     
                     Spacer()
             
