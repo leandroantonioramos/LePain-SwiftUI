@@ -4,75 +4,62 @@ import MapKit
 import SwiftUI
 
 struct LandingPageView: View {
-    @StateObject var landingPageViewModel = LandingPageView.Model()
+    @StateObject var landingPageViewModel = LandingPageView.ViewModel()
     @StateObject var mapViewModel = MapView.ViewModel()
     @State var locationManager = CLLocationManager()
     
     var body: some View {
         
-        ZStack {
-            
-            Color("background").edgesIgnoringSafeArea(.all)
-            
-            MapView()
-                .navigationBarBackButtonHidden(true)
-                .environmentObject(mapViewModel)
-                .navigationTitle(UserPreferences.shared.hasUserName)
-                .edgesIgnoringSafeArea(.bottom)
-            
-            VStack {
+        if #available(iOS 15.0, *) {
+            ZStack {
                 
-                VStack(spacing: 0) {
-                    
-                    HStack {
-                        
-                        Image(systemName: "magnifyingglass")
-                            .foregroundColor(.gray)
-                        
-                        TextField("Nome da padaria...",
-                                  text: $landingPageViewModel.searchText)
-                        .colorScheme(.light)
-                        
-                    }
-                    .padding(.vertical, 10)
-                    .padding(.horizontal)
-                    .background(Color.clear)
-                    
-                    Spacer()
-            
-            }
+                Color("background").edgesIgnoringSafeArea(.all)
+                
+                MapView()
+                    .navigationBarBackButtonHidden(true)
+                    .environmentObject(mapViewModel)
+                    .navigationBarTitle(UserPreferences.shared.hasUserName, displayMode: .large)
+                    .edgesIgnoringSafeArea(.bottom)
                 
                 VStack {
                     
-                    Button(action: mapViewModel.focusOnLocation,
-                           label: {
-                        Image(systemName: "location.fill")
-                            .font(.title2)
-                            .padding(10)
-                            .background(Color.secondary)
-                            .clipShape(Circle())
-                    })
+                    Spacer()
+                    
+                    VStack {
+                        
+                        Button(action: mapViewModel.focusOnLocation,
+                               label: {
+                            Image(systemName: "location.fill")
+                                .font(.title2)
+                                .padding(10)
+                                .background(Color.secondary)
+                                .clipShape(Circle())
+                        })
+                    }
+                    .frame(maxWidth: .infinity,
+                           alignment: .trailing)
+                    .padding()
+                    .padding(.bottom, 10)
+                    
                 }
-                .frame(maxWidth: .infinity,
-                       alignment: .trailing)
-                .padding()
-                .padding(.bottom, 10)
+            }
+            .searchable(text: $landingPageViewModel.searchText,
+                        placement: .navigationBarDrawer(displayMode: .always),
+                        prompt: Text("sei lá"))
+            .onAppear {
+                locationManager.delegate = mapViewModel
+                locationManager.requestWhenInUseAuthorization()
+            }
+            .alert(isPresented: $mapViewModel.permissionDenied) {
+                
+                Alert(title: Text("Location services denied or restricted"),
+                      message: Text("Please enable location in settings"),
+                      dismissButton: .default(Text("Go to settings"),
+                                              action: landingPageViewModel.goToSettingsApp))
                 
             }
-        }
-        .onAppear {
-            locationManager.delegate = mapViewModel
-            locationManager.requestWhenInUseAuthorization()
-        }
-        .alert(isPresented: $mapViewModel.permissionDenied) {
-            
-            Alert(title: Text("Location services denied or restricted"),
-                  message: Text("Please enable location in settings"),
-                  dismissButton: .default(Text("Go to settings"),
-                                          action: {
-                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-            }))
-            
+        } else {
+            // Fallback on earlier versions
         }
     }
 }

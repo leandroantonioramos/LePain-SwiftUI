@@ -5,7 +5,7 @@ import SwiftUI
 extension MapView {
     final class ViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         @Published var mapView = MKMapView()
-        @Published var region: MKCoordinateRegion?
+        @Published var region: MKCoordinateRegion!
         @Published var mapType: MKMapType = .standard
         @Published var permissionDenied = false
         

@@ -2,12 +2,8 @@ import GoogleMaps
 import GooglePlaces
 import SwiftUI
 
-let APIKey = "AIzaSyDzSIJ6D07yHj5gLLHkzd0mFXVOZWEbnkg"
-
 @main
 struct Padaria_SwiftUIApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
     var body: some Scene {
         WindowGroup {
             if UserDefaults.standard.bool(forKey: "completed") {
@@ -25,14 +21,5 @@ struct Padaria_SwiftUIApp: App {
                 }
             }
         }
-    }
-}
-
-class AppDelegate: NSObject, UIApplicationDelegate    {
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        GMSServices.provideAPIKey(APIKey)
-        GMSPlacesClient.provideAPIKey(APIKey)
-        return true
     }
 }

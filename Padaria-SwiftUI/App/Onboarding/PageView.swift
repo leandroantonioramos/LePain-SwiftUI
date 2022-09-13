@@ -57,7 +57,7 @@ struct PageView: View, Identifiable {
                         .simultaneousGesture(TapGesture().onEnded {
                             onboardingCompleteStatus.toggle()
                             updateOnboardingInfo()
-                            //resetDefaults()
+//                            resetDefaults()
                         })
                         .frame(minWidth: 0,
                                maxWidth: .infinity)

@@ -39,7 +39,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ABD5DAE6-597F-4938-BD88-3A69559CD235"
+            uuid = "D84E9F73-2DDB-4651-B85D-70CF43C9DF7B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -50,28 +50,44 @@
             endingLineNumber = "14"
             landmarkName = "focusOnLocation()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D84E9F73-2DDB-4651-B85D-70CF43C9DF7B - b7f0812548689255"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Padaria_SwiftUI.MapView.ViewModel.focusOnLocation() -&gt; ()"
+                  moduleName = "Padaria-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leandroramos/Desktop/LePain-SwiftUI/Padaria-SwiftUI/App/Map/ViewModel/MapView+ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "D84E9F73-2DDB-4651-B85D-70CF43C9DF7B - b7f0812548689255"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Padaria_SwiftUI.MapView.ViewModel.focusOnLocation() -&gt; ()"
+                  moduleName = "Padaria-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leandroramos/Desktop/LePain-SwiftUI/Padaria-SwiftUI/App/Map/ViewModel/MapView+ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "31CD019A-6876-43AE-8D91-C11C012BEFC3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Padaria-SwiftUI/App/Map/ViewModel/MapView+ViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "locationManagerDidChangeAuthorization(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C75069E4-D30B-4CE6-A62F-491704DFC017"
+            uuid = "F138C268-D205-4AE5-8D6A-4172A958CC51"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
