@@ -54,6 +54,7 @@ struct PageView: View, Identifiable {
                         NavigationLink(destination: PerfilView(viewModel: PerfilView.ViewModel())) {
                             Text(pageViewString(text: buttonTitle))
                         }
+                        .isDetailLink(false)
                         .simultaneousGesture(TapGesture().onEnded {
                             onboardingCompleteStatus.toggle()
                             updateOnboardingInfo()

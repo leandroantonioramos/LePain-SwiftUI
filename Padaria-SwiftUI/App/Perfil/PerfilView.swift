@@ -58,6 +58,7 @@ struct PerfilView: View {
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                             
                         }
+                        .isDetailLink(false)
                         .simultaneousGesture(TapGesture().onEnded {
                             viewModel.hasSavedData.toggle()
                             viewModel.getUsername()
@@ -78,7 +79,7 @@ struct PerfilView: View {
                 }
                 .padding()
             }
-            .navigationTitle(viewModel.perfil.sceneTitle)
+            .navigationBarTitle(Text(viewModel.perfil.sceneTitle), displayMode: .large)
             .navigationBarBackButtonHidden(true)
         }
     }
