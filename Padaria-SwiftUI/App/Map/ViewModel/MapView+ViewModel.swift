@@ -4,15 +4,26 @@ import SwiftUI
 
 extension MapView {
     final class ViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+        private let locationManager = CLLocationManager()
         @Published var mapView = MKMapView()
-        @Published var region: MKCoordinateRegion!
-        @Published var mapType: MKMapType = .standard
+        @Published var region: MKCoordinateRegion?
         @Published var permissionDenied = false
+        
+        var latitude: Double {
+            return locationManager.location?.coordinate.latitude ?? 0
+        }
+        
+        var longitude: Double {
+            return locationManager.location?.coordinate.longitude ?? 0
+        }
         
         func focusOnLocation()
         {
-            guard let region = region else { return }
-                        
+            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: latitude,
+                                                                           longitude: longitude),
+                                            latitudinalMeters: 1000,
+                                            longitudinalMeters: 1000)
+            
             mapView.setRegion(region, animated: true)
             mapView.setVisibleMapRect(mapView.visibleMapRect, animated: true)
         }
@@ -44,20 +55,19 @@ extension MapView {
         func locationManager(_ manager: CLLocationManager,
                              didUpdateLocations locations: [CLLocation])
         {
-            guard let location = locations.last else {
+            guard let location = locations.first else {
                 return
             }
-                        
-            self.region = MKCoordinateRegion(center: location.coordinate,
-                                             latitudinalMeters: 1000,
-                                             longitudinalMeters: 1000)
+            
+            region = MKCoordinateRegion(center: location.coordinate,
+                                        latitudinalMeters: 1000,
+                                        longitudinalMeters: 1000)
             
             guard let region = region else { return }
             
-            self.mapView.setRegion(region,
-                                   animated: true)
-            self.mapView.setVisibleMapRect(self.mapView.visibleMapRect,
-                                           animated: true)
+            
+            mapView.setRegion(region, animated: true)
+            mapView.setVisibleMapRect(mapView.visibleMapRect, animated: true)
         }
     }
 }
