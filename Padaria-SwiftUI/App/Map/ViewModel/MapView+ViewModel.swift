@@ -11,7 +11,7 @@ extension MapView {
         @Published var permissionDenied = false
         @Published var searchText = ""
         
-        @Published var landmarks: [Landmark] = [Landmark]()
+        @Published var landmarks: [MapViewLandmark] = [MapViewLandmark]()
         
         var latitude: Double {
             return locationManager.location?.coordinate.latitude ?? 0
@@ -31,7 +31,7 @@ extension MapView {
                 if let response = response {
                     let mapItems = response.mapItems
                     self.landmarks = mapItems.map {
-                        Landmark(placemark: $0.placemark)
+                        MapViewLandmark(placemark: $0.placemark)
                     }
                 }
             }

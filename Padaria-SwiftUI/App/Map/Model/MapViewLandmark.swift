@@ -1,6 +1,6 @@
 import MapKit
 
-struct Landmark: Identifiable {
+struct MapViewLandmark: Identifiable {
     let placemark: MKPlacemark
     
     var id: UUID {

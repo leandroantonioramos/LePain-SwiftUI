@@ -2,6 +2,7 @@ import MapKit
 
 extension MapView {
     class Coordinator: NSObject, MKMapViewDelegate {
+        
         func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView])
         {
             if let annotationView = views.first {
