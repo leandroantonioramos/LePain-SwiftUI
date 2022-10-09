@@ -5,9 +5,13 @@ import SwiftUI
 extension MapView {
     final class ViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         private let locationManager = CLLocationManager()
+        
         @Published var mapView = MKMapView()
         @Published var region: MKCoordinateRegion?
         @Published var permissionDenied = false
+        @Published var searchText = ""
+        
+        @Published var landmarks: [Landmark] = [Landmark]()
         
         var latitude: Double {
             return locationManager.location?.coordinate.latitude ?? 0
@@ -15,6 +19,22 @@ extension MapView {
         
         var longitude: Double {
             return locationManager.location?.coordinate.longitude ?? 0
+        }
+        
+        func getNearbyLandmarks(landmarkName: String)
+        {
+            let request = MKLocalSearch.Request()
+            request.naturalLanguageQuery = landmarkName
+            
+            let search = MKLocalSearch(request: request)
+            search.start { response, error in
+                if let response = response {
+                    let mapItems = response.mapItems
+                    self.landmarks = mapItems.map {
+                        Landmark(placemark: $0.placemark)
+                    }
+                }
+            }
         }
         
         func focusOnLocation()
@@ -64,7 +84,6 @@ extension MapView {
                                         longitudinalMeters: 1000)
             
             guard let region = region else { return }
-            
             
             mapView.setRegion(region, animated: true)
             mapView.setVisibleMapRect(mapView.visibleMapRect, animated: true)

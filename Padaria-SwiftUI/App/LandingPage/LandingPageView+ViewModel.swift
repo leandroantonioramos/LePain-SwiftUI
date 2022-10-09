@@ -2,7 +2,6 @@ import SwiftUI
 
 extension LandingPageView {
     final class ViewModel: NSObject, ObservableObject {
-        @Published var searchText = ""
         
         func goToSettingsApp()
         {

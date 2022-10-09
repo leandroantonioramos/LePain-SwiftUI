@@ -4,41 +4,32 @@ import SwiftUI
 struct MapView: UIViewRepresentable {
     @EnvironmentObject var mapViewModel: MapView.ViewModel
     
-    func makeUIView(context: Context) -> some UIView
+    func makeUIView(context: Context) -> some MKMapView
     {
         let view = mapViewModel.mapView
         
         view.showsUserLocation = true
         view.delegate = context.coordinator
+        view.isZoomEnabled = false
         
         return view
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context)
     {
-        
+        updateAnnotattions(from: uiView)
     }
 
     func makeCoordinator() -> Coordinator
     {
         return MapView.Coordinator()
     }
-}
-
-extension MapView {
-    class Coordinator: NSObject, MKMapViewDelegate {
-        func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView])
-        {
-            if let annotationView = views.first {
-                if let annotation = annotationView.annotation {
-                    if annotation is MKUserLocation {
-                        let region = MKCoordinateRegion(center: annotation.coordinate,
-                                                        latitudinalMeters: 1000,
-                                                        longitudinalMeters: 1000)
-                        mapView.setRegion(region, animated: true)
-                    }
-                }
-            }
-        }
+    
+    private func updateAnnotattions(from mapView: MKMapView)
+    {
+        mapView.removeAnnotations(mapView.annotations)
+        
+        let annotations = self.mapViewModel.landmarks.map(LandmarkAnnotation.init)
+        mapView.addAnnotations(annotations)
     }
 }
