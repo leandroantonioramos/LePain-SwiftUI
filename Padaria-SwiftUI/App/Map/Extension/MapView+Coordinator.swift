@@ -1,6 +1,7 @@
 import MapKit
+import SwiftUI
 
-extension MapView {
+extension MapView: View {
     class Coordinator: NSObject, MKMapViewDelegate {
         
         func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView])
@@ -15,6 +16,14 @@ extension MapView {
                     }
                 }
             }
+        }
+        
+        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
+        {
+            guard let coordinates = view.annotation?.coordinate else { return }
+            let span = mapView.region.span
+            let region = MKCoordinateRegion(center: coordinates, span: span)
+            mapView.setRegion(region, animated: true)
         }
     }
 }

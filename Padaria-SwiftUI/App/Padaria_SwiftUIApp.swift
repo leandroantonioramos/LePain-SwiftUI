@@ -1,9 +1,19 @@
-import GoogleMaps
-import GooglePlaces
 import SwiftUI
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool
+    {
+
+    return true
+  }
+}
 
 @main
 struct Padaria_SwiftUIApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
             if UserDefaults.standard.bool(forKey: "completed") {

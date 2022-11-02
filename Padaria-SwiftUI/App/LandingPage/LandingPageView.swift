@@ -10,6 +10,7 @@ struct LandingPageView: View {
     @StateObject var mapViewModel = MapView.ViewModel()
     
     @State var locationManager = CLLocationManager()
+    @State var selectedPlace: MapViewLandmarkAnnotation?
     
     var body: some View {
         
@@ -17,11 +18,12 @@ struct LandingPageView: View {
             
             Color("background").edgesIgnoringSafeArea(.all)
             
-            MapView()
-                .navigationBarBackButtonHidden(true)
-                .environmentObject(mapViewModel)
-                .navigationBarTitle(UserPreferences.shared.hasUserName, displayMode: .large)
-                .edgesIgnoringSafeArea(.bottom)
+            MapView() { _ in
+            }
+            .navigationBarBackButtonHidden(true)
+            .environmentObject(mapViewModel)
+            .navigationBarTitle(UserPreferences.shared.hasUserName, displayMode: .large)
+            .edgesIgnoringSafeArea(.bottom)
             
             VStack {
                 
@@ -36,7 +38,7 @@ struct LandingPageView: View {
                         TextField("Search ...", text: $mapViewModel.searchText)
                             .keyboardType(.twitter)
                             .textFieldStyle(.roundedBorder)
-
+                        
                         Button("Continue") {
                             mapViewModel.getNearbyLandmarks(landmarkName: mapViewModel.searchText)
                             UIApplication.shared.endEditing()

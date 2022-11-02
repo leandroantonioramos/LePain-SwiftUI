@@ -3,6 +3,8 @@ import SwiftUI
 
 struct MapView: UIViewRepresentable {
     @EnvironmentObject var mapViewModel: MapView.ViewModel
+    
+    var didSelect: (MapViewLandmarkAnnotation) -> ()
         
     func makeUIView(context: Context) -> some MKMapView
     {
@@ -30,6 +32,6 @@ struct MapView: UIViewRepresentable {
         mapView.removeAnnotations(mapView.annotations)
         
         let annotations = self.mapViewModel.landmarks.map(MapViewLandmarkAnnotation.init)
-        mapView.addAnnotations(annotations)
+        mapView.addAnnotations(annotations)        
     }
 }
