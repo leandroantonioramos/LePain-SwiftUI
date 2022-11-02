@@ -6,8 +6,7 @@ target 'Padaria-SwiftUI' do
   use_frameworks!
 
   # Pods for Padaria-SwiftUI
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
+  pod 'FirebaseCore'
 
   target 'Padaria-SwiftUITests' do
     inherit! :search_paths

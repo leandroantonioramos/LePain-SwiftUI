@@ -1,0 +1,6 @@
+framework module Pods_Padaria_SwiftUI {
+  umbrella header "Pods-Padaria-SwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
